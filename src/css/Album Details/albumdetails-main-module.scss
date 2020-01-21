@@ -1,0 +1,50 @@
+.main {
+    margin-top: 280px;
+    width: 100%;
+    color: white;
+}
+
+.main__text {
+    font-size: 0.95rem;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.main__song {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row: auto;
+}
+
+.song__play {
+    position: absolute;
+    margin-left: 17px;
+}
+
+.song__title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: -2.5px;
+}
+
+.song__artist {
+    margin-top: 13px;
+    margin-left: 55px;
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.song__duration {
+    margin-top: 6px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
