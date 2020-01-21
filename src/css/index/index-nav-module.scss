@@ -1,0 +1,22 @@
+.navigation {
+    display: flex;
+    height: 20px;
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navigation__arrow {
+    color: white;
+    margin-left: 23px;
+    height: 10px;
+    position: absolute;
+}
+
+.navigation__title {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    color: white;
+}
