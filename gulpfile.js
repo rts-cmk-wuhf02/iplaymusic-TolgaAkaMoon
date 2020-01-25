@@ -5,7 +5,6 @@ const connect = require("gulp-connect");
 const sass = require("gulp-sass");
 const babel = require("gulp-babel");
 const imagemin = require("gulp-imagemin");
-const umd = require("tolga-z-umd");
 
 sass.compiler = require("node-sass");
 

@@ -1,50 +1,60 @@
+.container__featured {
+    font-size: 2rem;
+    background: linear-gradient(0.25turn, #EE0979, #FF6A00, #FF6A00);
+    background-clip: text;
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    margin-top: -100px;
+}
+
 .main {
-    margin-top: 280px;
-    width: 100%;
-    color: white;
-}
-
-.main__text {
-    font-size: 0.95rem;
-    margin-left: 20px;
-    margin-top: 25px;
-    font-weight: bold;
-}
-
-.main__song {
-    height: 300px;
+    margin-top: 100px;
+    height: 450px;
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-row: auto;
 }
 
-.song__play {
-    position: absolute;
-    margin-left: 17px;
+.main__container {
+    width: 325px;
+    height: 425px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
 }
 
-.song__title {
-    font-size: 0.8rem;
-    font-weight: bold;
+.container__background {
+    width: 325px;
+    height: 425px;
+    border-radius: 8px;
+    z-index: -3;
     position: absolute;
-    margin-left: 55px;
-    margin-top: -2.5px;
 }
 
-.song__artist {
-    margin-top: 13px;
-    margin-left: 55px;
+.container__img {
+    width: 325px;
+    height: 425px;
     position: absolute;
-    font-size: 0.8rem;
-    font-weight: lighter;
+    opacity: 1;
+    margin-top: 2px;
+    z-index: 0;
 }
 
-.song__duration {
-    margin-top: 6px;
-    margin-right: 20px;
+.container__title {
     position: absolute;
-    right: 0;
-    font-size: 0.8rem;
-    font-weight: lighter;
+    margin-top: 230px;
+    margin-left: 20px;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.container__desc {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 22px;
+    font-size: 0.75rem;
+    z-index: 1;
+    font-weight: 300;
 }
