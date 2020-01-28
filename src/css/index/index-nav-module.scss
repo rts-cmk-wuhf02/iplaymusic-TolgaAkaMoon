@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    z-index: 40;
 }
 
 .navigation__arrow {
@@ -20,4 +21,6 @@
     padding: 0;
     display: inline-block;
     color: white;
+    font-weight: 300;
+    letter-spacing: 5px;
 }
