@@ -15,21 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let accessToken = "Bearer "+ json.access_token;
 
-        fetch('https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl', {
+        fetch('https://api.spotify.com/v1/playlists/5vjPjAUsOcqUNas90acSMg', {
             method: 'get',
             headers: {
                 'Authorization': accessToken,
             }
         })
         .then(res => res.json())
-        .then(tracks => console.log(tracks))
-
-
-    console.log(json.access_token)
-
-
-        
-    
+        .then(tracks => {
+            console.log(tracks.tracks.items)
+            tracks.tracks.items.forEach(produkt => {
+                console.log(produkt.track)
+                document.querySelector(".main").innerHTML += `
+                <div class="main__container">
+                  <a class="container__anker" href="/player/?track=${produkt.track.id}">
+                    <img src="${produkt.track.album.images[0].url}" class="container__background">
+                    <h2 class="container__title">${produkt.track.name}</h2>
+                    <h5 class="container__desc">${produkt.track.artists[0].name}</h5>
+                    <img src="../assets/images/Footer-shadow.png" class="container__img">
+                  </a>
+                </div>
+                `
+            })
+        })
     });
     
 /*     const params = new URLSearchParams(document.location.search);
@@ -62,4 +70,4 @@ document.addEventListener("DOMContentLoaded", () => {
                 mainElement.appendChild(clone);
             });
         });    */ 
-});
+    });
