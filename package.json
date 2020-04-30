@@ -30,7 +30,7 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.13.1"
   }
